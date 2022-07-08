@@ -23,7 +23,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-cross = input("You are at a crossroad.Where do you want to go? Type 'left' or 'right'\n").lower()
+cross = input("You are at a crossroad. Where do you want to go? Type 'left' or 'right'\n").lower()
 
 if cross.startswith('r'):
   print("You fell into a hole. Game Over.")
