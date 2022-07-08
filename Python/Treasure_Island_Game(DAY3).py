@@ -28,7 +28,7 @@ cross = input("You are at a crossroad.Where do you want to go? Type 'left' or 'r
 if cross.startswith('r'):
   print("You fell into a hole. Game Over.")
 else:
-  lake = input("You have come to a lake. There is an island in the middle of the lake. TYpe 'wait' to wait for a boat. Type 'swim' to swim across\n").lower()
+  lake = input("You have come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across\n").lower()
 
   if lake.startswith('s'):
     print('You got attacked by alligator. Game Over.')
