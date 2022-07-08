@@ -61,4 +61,4 @@ if match_result.startswith('d'):
 elif match_result.startswith('u'):
   print('You win!')
 else:
-  print('You lose')
+  print('You lose!')
