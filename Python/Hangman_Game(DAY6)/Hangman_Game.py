@@ -37,7 +37,7 @@ while not end_of_game:
             end_of_game = True
             print("You lose.")
 
-    #Join all the elements in the list and turn it into a String.
+    #Join all the elements in the list and turn it into a String
     print(f"{' '.join(display)}")
 
     #Check if user has got all letters.
