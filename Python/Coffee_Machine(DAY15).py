@@ -79,6 +79,7 @@ while on:
         print(f"Water: {resources['water']}ml")
         print(f"Milk: {resources['milk']}ml")
         print(f"Coffee: {resources['coffee']}g")
+        print(f"Money: {money_in_machine}$")
 
     if user_input == "espresso" or user_input == "latte" or user_input == "cappuccino":
         print(grab_coffee(user_input))
