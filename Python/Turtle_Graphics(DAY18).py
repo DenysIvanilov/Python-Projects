@@ -1,5 +1,9 @@
 import turtle
 from turtle import Turtle, Screen
+import random
+
+colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue",
+           "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
 
 timmy = Turtle()
 timmy.shape("turtle")
@@ -7,23 +11,26 @@ timmy.color("green")
 
 # Drawing a Square
 for _ in range(4):
-    turtle.fd(100)
-    turtle.lt(90)
+    timmy.fd(100)
+    timmy.lt(90)
 
-turtle.clear()
+timmy.clear()
 # Drawing a Dashed Line
 for _ in range(15):
-    turtle.fd(10)
-    turtle.penup()
-    turtle.fd(10)
-    turtle.pendown()
+    timmy.fd(10)
+    timmy.penup()
+    timmy.fd(10)
+    timmy.pendown()
 
-turtle.clear()
-# Drawing Different Shapes
+timmy.clear()
+# Drawing Different Shapes( from 3 sides to 10 )
 for i in range(3, 11):
     angle = 360 / i
+    timmy.color(colours[random.randint(0, len(colours) - 1)])
     for _ in range(i):
-        turtle.rt(angle)
-        turtle.fd(100)
+        timmy.rt(angle)
+        timmy.fd(100)
+
+
 screen = Screen()
 screen.exitonclick()
