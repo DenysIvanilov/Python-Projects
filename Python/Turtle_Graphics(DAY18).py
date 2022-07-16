@@ -18,6 +18,12 @@ for _ in range(15):
     turtle.fd(10)
     turtle.pendown()
 
-
+turtle.clear()
+# Drawing Different Shapes
+for i in range(3, 11):
+    angle = 360 / i
+    for _ in range(i):
+        turtle.rt(angle)
+        turtle.fd(100)
 screen = Screen()
 screen.exitonclick()
