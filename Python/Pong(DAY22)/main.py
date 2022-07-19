@@ -22,7 +22,6 @@ screen.onkey(r_paddle.move_down, "Down")
 screen.onkey(l_paddle.move_up, "w")
 screen.onkey(l_paddle.move_down, "s")
 
-
 game_is_on = True
 while game_is_on:
     time.sleep(ball.move_speed)
@@ -46,9 +45,5 @@ while game_is_on:
     if ball.xcor() < -380:
         ball.reset_position()
         scoreboard.r_point()
-
-
-
-
 
 screen.exitonclick()
